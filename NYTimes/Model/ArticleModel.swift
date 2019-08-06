@@ -30,7 +30,6 @@ struct ArticleItem: Networkable {
     let title, abstract, publishedDate: String
     let source: Source
     let id, assetID, views: Int
-    let desFacet, orgFacet, perFacet, geoFacet: Facet
     let media: [Media]
     let uri: String
     
@@ -42,39 +41,7 @@ struct ArticleItem: Networkable {
         case source, id
         case assetID = "asset_id"
         case views
-        case desFacet = "des_facet"
-        case orgFacet = "org_facet"
-        case perFacet = "per_facet"
-        case geoFacet = "geo_facet"
         case media, uri
-    }
-}
-
-enum Facet: Networkable {
-    case string(String)
-    case stringArray([String])
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        if let x = try? container.decode([String].self) {
-            self = .stringArray(x)
-            return
-        }
-        if let x = try? container.decode(String.self) {
-            self = .string(x)
-            return
-        }
-        throw DecodingError.typeMismatch(Facet.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for Facet"))
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        switch self {
-        case .string(let x):
-            try container.encode(x)
-        case .stringArray(let x):
-            try container.encode(x)
-        }
     }
 }
 

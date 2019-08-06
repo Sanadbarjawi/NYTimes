@@ -223,6 +223,7 @@
 				C9A19CFC22F89BC2002D06A7 /* Frameworks */,
 				C9A19CFD22F89BC2002D06A7 /* Resources */,
 				B3F573553355226B5DC2D46F /* [CP] Embed Pods Frameworks */,
+				C9A19D2722F9F850002D06A7 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -371,6 +372,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NYTimes/Pods-NYTimes-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C9A19D2722F9F850002D06A7 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ArticleCell: UITableViewCell ,Cellable {
+class ArticleCell: UITableViewCell, Cellable {
     
     @IBOutlet weak var articleImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -18,7 +18,7 @@ class ArticleCell: UITableViewCell ,Cellable {
             titleLabel.text = article.title
             captionLabel.text = article.abstract
             articleImageView.layer.cornerRadius = 25
-            articleImageView.kf.setImage(with: URL(string: article.media.compactMap{$0.mediaMetadata.compactMap{$0.url}[0]}[0]))
+            articleImageView.kf.setImage(with: URL(string: article.media.compactMap { $0.mediaMetadata.compactMap{$0.url}[0]}[0]))
         }
     }
     
