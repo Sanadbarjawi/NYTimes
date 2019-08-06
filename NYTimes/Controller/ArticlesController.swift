@@ -26,6 +26,11 @@ class ArticlesController: UIViewController {
         articlesTableView.setAdapter(articlesTableViewAdapter)
         presenter.attachView(self)
         presenter.getMostViewed()
+        articlesSection.didSelect = {[weak self] (article, _) in
+            let detailsController = ArticleDetailsController.instantiate()
+            detailsController.populate(with: article)
+            self?.navigationController?.pushViewController(detailsController, animated: true)
+        }
     }
     
     @objc func getArticles() {
