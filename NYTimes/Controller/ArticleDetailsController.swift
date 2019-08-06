@@ -22,7 +22,7 @@ class ArticleDetailsController: UIViewController {
     }
     
     func populate(with article: ArticleItem) {
-        imageUrl = article.media.compactMap{$0.mediaMetadata.compactMap{$0.url}[0]}[0]
+        imageUrl = article.media.compactMap {$0.mediaMetadata.compactMap {$0.url}[0]}[0]
         articleTitle = article.title
     }
     

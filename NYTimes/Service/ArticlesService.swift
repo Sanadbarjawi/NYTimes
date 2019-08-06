@@ -2,7 +2,7 @@
 //  NYTimesService.swift
 //  NYTimes
 //
-//  Created by IOS Builds on 8/6/19.
+//  Created by Sanad Barjawi on 8/6/19.
 //  Copyright © 2019 Sanad Barjawi. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ class ArticlesService {
     
     let apiHelper = APIHelper()
     
-    func mostViewed(marker: MostViewedMarker = .aWeekAgo, completion: @escaping (Result<ArticleModel, Error>) -> Void)  {
+    func mostViewed(marker: MostViewedMarker = .aWeekAgo, completion: @escaping (Result<ArticleModel, Error>) -> Void) {
         apiHelper.request(endPoint: URLPath.mostViewed(mark: marker.rawValue), method: .get) { (data, error) in
             
             if error != nil {

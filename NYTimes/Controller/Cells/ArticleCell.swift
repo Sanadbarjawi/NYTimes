@@ -2,7 +2,7 @@
 //  ArticleCell.swift
 //  NYTimes
 //
-//  Created by IOS Builds on 8/6/19.
+//  Created by Sanad Barjawi on 8/6/19.
 //  Copyright © 2019 Sanad Barjawi. All rights reserved.
 //
 
@@ -18,7 +18,7 @@ class ArticleCell: UITableViewCell, Cellable {
             titleLabel.text = article.title
             captionLabel.text = article.abstract
             articleImageView.layer.cornerRadius = 25
-            articleImageView.kf.setImage(with: URL(string: article.media.compactMap { $0.mediaMetadata.compactMap{$0.url}[0]}[0]))
+            articleImageView.kf.setImage(with: URL(string: article.media.compactMap { $0.mediaMetadata.compactMap {$0.url}[0]}[0]))
         }
     }
     

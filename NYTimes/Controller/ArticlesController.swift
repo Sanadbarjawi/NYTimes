@@ -2,7 +2,7 @@
 //  ArticlesController.swift
 //  NYTimes
 //
-//  Created by IOS Builds on 8/6/19.
+//  Created by Sanad Barjawi on 8/6/19.
 //  Copyright © 2019 Sanad Barjawi. All rights reserved.
 //
 
@@ -31,6 +31,10 @@ class ArticlesController: UIViewController {
             detailsController.populate(with: article)
             self?.navigationController?.pushViewController(detailsController, animated: true)
         }
+    }
+    
+    deinit {
+        presenter.detachView()
     }
     
     @objc func getArticles() {

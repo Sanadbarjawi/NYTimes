@@ -1,4 +1,3 @@
-
 //
 //  AdapterTableView.swift
 //  NYTimes
@@ -99,7 +98,6 @@ extension TableViewAdapter: UITableViewDelegate, UITableViewDataSource {
 }
 
 class TableViewSection<Model: Configurable, Cell>: ConfigurableSection where Cell: UITableViewCell & Cellable {
-    
     
     weak var delegate: CellableDelegate?
     

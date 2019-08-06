@@ -2,7 +2,7 @@
 //  ArticleModel.swift
 //  NYTimes
 //
-//  Created by IOS Builds on 8/6/19.
+//  Created by Sanad Barjawi on 8/6/19.
 //  Copyright © 2019 Sanad Barjawi. All rights reserved.
 //
 

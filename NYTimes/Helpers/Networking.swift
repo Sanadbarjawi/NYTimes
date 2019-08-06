@@ -25,7 +25,6 @@ extension Networking {
     
     func request(endPoint: Endpoint, method: HTTPMethod, parameters: Parameters? = nil, headers: HTTPHeaders? = nil, callback: @escaping NetworkingCompletionHandler) {
 
-        
         guard let url = URL(string: endPoint.path) else {
             return
         }
@@ -39,9 +38,7 @@ extension Networking {
 
 }
 class APIHelper: Networking {
-
     
-
     var sessionManager: Session? = Alamofire.Session.default
 
     init() {
