@@ -37,11 +37,12 @@ class ArticlesPresenter {
             switch result {
             case .success(let articlesModel):
                 self?.articlesList = articlesModel.results
-                self?.articlesView?.finishLoading()
                 self?.articlesView?.setSucceeded()
-            case .failure(let error):
                 self?.articlesView?.finishLoading()
+
+            case .failure(let error):
                 self?.articlesView?.setError(with: error.localizedDescription)
+                self?.articlesView?.finishLoading()
             }
         })
     }
