@@ -22,6 +22,7 @@
 		C9A19D0D22F89BC4002D06A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A19D0B22F89BC4002D06A7 /* LaunchScreen.storyboard */; };
 		C9A19D1822F89BC4002D06A7 /* NYTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A19D1722F89BC4002D06A7 /* NYTimesTests.swift */; };
 		C9A19D2322F9E854002D06A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A19D2222F9E854002D06A7 /* Extensions.swift */; };
+		C9A19D2522F9ECCB002D06A7 /* ArticleDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A19D2422F9ECCB002D06A7 /* ArticleDetailsController.swift */; };
 		DE3771A5941AC867A5243756 /* Pods_NYTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB564898C51D2242CC880ABB /* Pods_NYTimes.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		C9A19D1722F89BC4002D06A7 /* NYTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesTests.swift; sourceTree = "<group>"; };
 		C9A19D1922F89BC4002D06A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9A19D2222F9E854002D06A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C9A19D2422F9ECCB002D06A7 /* ArticleDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsController.swift; sourceTree = "<group>"; };
 		CA158AF4539AAC897BF155B7 /* Pods-NYTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimes.debug.xcconfig"; path = "Target Support Files/Pods-NYTimes/Pods-NYTimes.debug.xcconfig"; sourceTree = "<group>"; };
 		CB564898C51D2242CC880ABB /* Pods_NYTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 				9893769122F9C8F30062B91B /* Cells */,
 				C9A19D0622F89BC2002D06A7 /* Main.storyboard */,
 				9893768522F9B2D00062B91B /* ArticlesController.swift */,
+				C9A19D2422F9ECCB002D06A7 /* ArticleDetailsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				9893769322F9C8FE0062B91B /* ArticleCell.swift in Sources */,
 				9893768922F9B7E60062B91B /* Networking.swift in Sources */,
 				9893768622F9B2D00062B91B /* ArticlesController.swift in Sources */,
+				C9A19D2522F9ECCB002D06A7 /* ArticleDetailsController.swift in Sources */,
 				9893768022F9A9930062B91B /* AdapterTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

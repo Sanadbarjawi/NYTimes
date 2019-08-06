@@ -12,7 +12,7 @@
         <!--NY Times Most Popular-->
         <scene sceneID="HpW-iT-8ya">
             <objects>
-                <viewController id="iWb-JP-Lw3" customClass="ArticlesController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArticlesController" id="iWb-JP-Lw3" customClass="ArticlesController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uii-Mp-5Uu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,16 +86,38 @@
                     <navigationItem key="navigationItem" title="NY Times Most Popular" id="Qtd-Uw-NUA"/>
                     <connections>
                         <outlet property="articlesTableView" destination="824-7i-Wdu" id="hFA-2f-z70"/>
+                        <outlet property="errorLabel" destination="61E-3s-h8H" id="95E-z2-HEs"/>
+                        <outlet property="errorView" destination="c0M-ml-99X" id="iTW-fs-THo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BA7-AU-D5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="c0M-ml-99X">
+                    <rect key="frame" x="0.0" y="0.0" width="431" height="535"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61E-3s-h8H">
+                            <rect key="frame" x="20" y="257.5" width="391" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="61E-3s-h8H" firstAttribute="centerY" secondItem="c0M-ml-99X" secondAttribute="centerY" id="Nba-1y-4Jy"/>
+                        <constraint firstItem="61E-3s-h8H" firstAttribute="leading" secondItem="9DH-sz-KZX" secondAttribute="leading" constant="20" id="RnT-YH-KcT"/>
+                        <constraint firstItem="61E-3s-h8H" firstAttribute="centerX" secondItem="c0M-ml-99X" secondAttribute="centerX" id="c4I-cx-e2f"/>
+                        <constraint firstItem="9DH-sz-KZX" firstAttribute="trailing" secondItem="61E-3s-h8H" secondAttribute="trailing" constant="20" id="jHv-Za-LZm"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="9DH-sz-KZX"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="298.55072463768118" y="75.669642857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Article Details Controller-->
         <scene sceneID="Gj0-n9-aPI">
             <objects>
-                <viewController id="UH9-6c-GPw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArticleDetailsController" id="UH9-6c-GPw" customClass="ArticleDetailsController" customModule="NYTimes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D6H-LH-Juf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8VN-Fe-uU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1067" y="76"/>
+            <point key="canvasLocation" x="1106" y="76"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7wM-W0-HQe">
@@ -129,7 +151,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssK-nc-v9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="299" y="-673"/>
+            <point key="canvasLocation" x="-478" y="76"/>
         </scene>
     </scenes>
 </document>

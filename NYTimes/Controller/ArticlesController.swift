@@ -11,6 +11,8 @@ import UIKit
 class ArticlesController: UIViewController {
     
     @IBOutlet weak var articlesTableView: UITableView!
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet var errorView: UIView!
     
     private var presenter = ArticlesPresenter(ArticlesService())
     private var articlesSection: TableViewSection<ArticleItem, ArticleCell>!
@@ -35,10 +37,12 @@ class ArticlesController: UIViewController {
 extension ArticlesController: ArticlesView {
     
     func setError(with message: String) {
-        
+        errorLabel.text = message
+        articlesTableView.backgroundView = errorView
     }
     
     func setSucceeded() {
+        articlesTableView.backgroundView = nil
         articlesSection.updateData(presenter.getArticlesData())
         articlesTableView.reloadData()
     }
