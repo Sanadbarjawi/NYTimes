@@ -21,6 +21,7 @@
 		C9A19D0A22F89BC4002D06A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A19D0922F89BC4002D06A7 /* Assets.xcassets */; };
 		C9A19D0D22F89BC4002D06A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A19D0B22F89BC4002D06A7 /* LaunchScreen.storyboard */; };
 		C9A19D1822F89BC4002D06A7 /* NYTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A19D1722F89BC4002D06A7 /* NYTimesTests.swift */; };
+		C9A19D2322F9E854002D06A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A19D2222F9E854002D06A7 /* Extensions.swift */; };
 		DE3771A5941AC867A5243756 /* Pods_NYTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB564898C51D2242CC880ABB /* Pods_NYTimes.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		C9A19D1322F89BC4002D06A7 /* NYTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A19D1722F89BC4002D06A7 /* NYTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesTests.swift; sourceTree = "<group>"; };
 		C9A19D1922F89BC4002D06A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9A19D2222F9E854002D06A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CA158AF4539AAC897BF155B7 /* Pods-NYTimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTimes.debug.xcconfig"; path = "Target Support Files/Pods-NYTimes/Pods-NYTimes.debug.xcconfig"; sourceTree = "<group>"; };
 		CB564898C51D2242CC880ABB /* Pods_NYTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 			children = (
 				9893768C22F9C4290062B91B /* Configuration.swift */,
 				9893768822F9B7E50062B91B /* Networking.swift */,
+				C9A19D2222F9E854002D06A7 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				9893769022F9C8D80062B91B /* ArticleModel.swift in Sources */,
 				9893768D22F9C4290062B91B /* Configuration.swift in Sources */,
 				C9A19D0322F89BC2002D06A7 /* AppDelegate.swift in Sources */,
+				C9A19D2322F9E854002D06A7 /* Extensions.swift in Sources */,
 				9893769322F9C8FE0062B91B /* ArticleCell.swift in Sources */,
 				9893768922F9B7E60062B91B /* Networking.swift in Sources */,
 				9893768622F9B2D00062B91B /* ArticlesController.swift in Sources */,

@@ -12,7 +12,7 @@ import Foundation
 
 private struct Configuration {
     static var APIKey: String {
-        return "39c5314c-e795-4270-aa20-dce009d21de9"
+        return "QnMm9uz0wh8kAHU78G0VEs94epAB8i42"
     }
     
     static var serverURL: String {

@@ -17,9 +17,19 @@ class ArticlesService {
     
     let apiHelper = APIHelper()
     
-    func mostViewed(marker: MostViewedMarker = .aWeekAgo) {
+    func mostViewed(marker: MostViewedMarker = .aWeekAgo, completion: @escaping (Result<ArticleModel, Error>) -> Void)  {
         apiHelper.request(endPoint: URLPath.mostViewed(mark: marker.rawValue), method: .get) { (data, error) in
             
+            if error != nil {
+                completion(.failure(error!))
+            }
+            do {
+                guard let data = data else {return}
+                let articles = try JSONDecoder().decode(ArticleModel.self, from: data)
+                completion(.success(articles))
+            } catch {
+                
+            }
         }
     }
     
